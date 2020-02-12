@@ -6,7 +6,7 @@
 		$sql = "select * from Contact";
 		$dbrecords = mysqli_query($connect,$sql) or die("Unable to query data");
 		
-		header("Content-type: text/xml");
+		
 		 echo "<?xml version = '1.0' encoding = 'UTF-8'?>
 			<data>";
 		while($row = mysqli_fetch_object($dbrecords)) {
